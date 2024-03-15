@@ -1,24 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="product, popular trending product, trending product"
+    />
+    <meta name="author" content="Chidiebere" />
     <title>Products</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/styles/products.css" />
+    <script src="/scripts/products.js" defer></script>
+  </head>
+  <body>
+    <main id="main-container">
+      <section class="product-container">
+        <h2>Products</h2>
+        <p>Order it for you or for your beloved ones</p>
+        <figure>
+          <div class="product-card" data-id="1">
+            <img src="/images/Spiced-mint.png" alt="Spiced min" />
+            <p><strong>Spiced Mint</strong><span>9.99$</span></p>
+          </div>
+          <div class="product-card" data-id="2">
+            <img src="/images/Sweet-stoweberry.png" alt="Sweet stroweberry" />
+            <p>
+              <strong>Sweet Stroweberry</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="3">
+            <img src="/images/Cool-blueberries.png" alt="Cool blueberries" />
+            <p>
+              <strong>Cool Blueberries</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="4">
+            <img src="/images/Juicy-Lemon.png" alt="Juicy Lemon" />
+            <p>
+              <strong>Juicy Lemon</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+        </figure>
+        <figure>
+          <div class="product-card" data-id="5">
+            <img src="/images/Milky-Flavor.png" alt="Milky Flavor" />
+            <p>
+              <strong>Milky Flavor</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="6">
+            <img src="/images/Fragrant-cinnamon.png" alt="Fragrant cinnamon" />
+            <p>
+              <strong>Fragrant Cinnamon</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="7">
+            <img src="/images/Summer-Cheries.png" alt="Summer Cheries" />
+            <p>
+              <strong>Summer Cheries</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="8">
+            <img src="/images/Clean-Lavander.png" alt="Clean Lavander" />
+            <p>
+              <strong>Clean Lavander</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+        </figure>
+      </section>
 
+      <section>
+        <h2>Popular</h2>
+        <p>Order it for you or for your beloved ones</p>
+        <figure>
+          <div class="product-card" data-id="9">
+            <img src="/images/Spiced-mint.png" alt="Spiced min" />
+            <p>
+              <strong>Spiced Mint</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="10">
+            <img src="/images/Sweet-stoweberry.png" alt="Sweet stroweberry" />
+            <p>
+              <strong>Sweet Stroweberry</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="11">
+            <img src="/images/Cool-blueberries.png" alt="Cool blueberries" />
+            <p>
+              <strong>Cool Blueberries</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="12">
+            <img src="/images/Juicy-Lemon.png" alt="Juicy Lemon" />
+            <p>
+              <strong>Juicy Lemon</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Trending</h2>
+        <p>Our top selling product that you may like</p>
+        <figure>
+          <div class="product-card" data-id="13">
+            <img src="/images/Spiced-mint.png" alt="Spiced min" />
+            <p>
+              <strong>Spiced Mint</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="14">
+            <img src="/images/Sweet-stoweberry.png" alt="Sweet stroweberry" />
+            <p>
+              <strong>Sweet Stroweberry</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="15">
+            <img src="/images/Cool-blueberries.png" alt="Cool blueberries" />
+            <p>
+              <strong>Cool Blueberries</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+          <div class="product-card" data-id="16">
+            <img src="/images/Juicy-Lemon.png" alt="Juicy Lemon" />
+            <p>
+              <strong>Juicy Lemon</strong>
+              <span>9.99$</span>
+            </p>
+          </div>
+        </figure>
+      </section>
+    </main>
 
     <script>
-        window.SnipcartSettings = {
-            publicApiKey: 'NjM4ZDI0NDUtZTY2NS00ODY1LThlNTQtYTQxMDViZjZmYTQ4NjM4NDU0MTM3NzA1OTkzNDU4',
-          loadStrategy: "on-user-interaction",
-          timeoutDuration: 5000,
-          modalStyle: "side",
+      window.SnipcartSettings = {
+        publicApiKey:
+          "NjM4ZDI0NDUtZTY2NS00ODY1LThlNTQtYTQxMDViZjZmYTQ4NjM4NDU0MTM3NzA1OTkzNDU4",
+        loadStrategy: "on-user-interaction",
+        timeoutDuration: 5000,
+        modalStyle: "side",
+      };
 
-        };
-      
-        (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
-      </script>
-</body>
+      (function () {
+        var c, d;
+        (d = (c = window.SnipcartSettings).version) != null ||
+          (c.version = "3.0");
+        var s, S;
+        (S = (s = window.SnipcartSettings).timeoutDuration) != null ||
+          (s.timeoutDuration = 2750);
+        var l, p;
+        (p = (l = window.SnipcartSettings).domain) != null ||
+          (l.domain = "cdn.snipcart.com");
+        var w, u;
+        (u = (w = window.SnipcartSettings).protocol) != null ||
+          (w.protocol = "https");
+        var m, g;
+        (g = (m = window.SnipcartSettings).loadCSS) != null || (m.loadCSS = !0);
+        var y =
+            window.SnipcartSettings.version.includes("v3.0.0-ci") ||
+            (window.SnipcartSettings.version != "3.0" &&
+              window.SnipcartSettings.version.localeCompare("3.4.0", void 0, {
+                numeric: !0,
+                sensitivity: "base",
+              }) === -1),
+          f = ["focus", "mouseover", "touchmove", "scroll", "keydown"];
+        window.LoadSnipcart = o;
+        document.readyState === "loading"
+          ? document.addEventListener("DOMContentLoaded", r)
+          : r();
+        function r() {
+          window.SnipcartSettings.loadStrategy
+            ? window.SnipcartSettings.loadStrategy === "on-user-interaction" &&
+              (f.forEach(function (t) {
+                return document.addEventListener(t, o);
+              }),
+              setTimeout(o, window.SnipcartSettings.timeoutDuration))
+            : o();
+        }
+        var a = !1;
+        function o() {
+          if (a) return;
+          a = !0;
+          let t = document.getElementsByTagName("head")[0],
+            n = document.querySelector("#snipcart"),
+            i = document.querySelector(
+              'src[src^="'
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(
+                  window.SnipcartSettings.domain,
+                  '"][src$="snipcart.js"]'
+                )
+            ),
+            e = document.querySelector(
+              'link[href^="'
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(
+                  window.SnipcartSettings.domain,
+                  '"][href$="snipcart.css"]'
+                )
+            );
+          n ||
+            ((n = document.createElement("div")),
+            (n.id = "snipcart"),
+            n.setAttribute("hidden", "true"),
+            document.body.appendChild(n)),
+            h(n),
+            i ||
+              ((i = document.createElement("script")),
+              (i.src = ""
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(window.SnipcartSettings.domain, "/themes/v")
+                .concat(
+                  window.SnipcartSettings.version,
+                  "/default/snipcart.js"
+                )),
+              (i.async = !0),
+              t.appendChild(i)),
+            !e &&
+              window.SnipcartSettings.loadCSS &&
+              ((e = document.createElement("link")),
+              (e.rel = "stylesheet"),
+              (e.type = "text/css"),
+              (e.href = ""
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(window.SnipcartSettings.domain, "/themes/v")
+                .concat(
+                  window.SnipcartSettings.version,
+                  "/default/snipcart.css"
+                )),
+              t.prepend(e)),
+            f.forEach(function (v) {
+              return document.removeEventListener(v, o);
+            });
+        }
+        function h(t) {
+          !y ||
+            ((t.dataset.apiKey = window.SnipcartSettings.publicApiKey),
+            window.SnipcartSettings.addProductBehavior &&
+              (t.dataset.configAddProductBehavior =
+                window.SnipcartSettings.addProductBehavior),
+            window.SnipcartSettings.modalStyle &&
+              (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle),
+            window.SnipcartSettings.currency &&
+              (t.dataset.currency = window.SnipcartSettings.currency),
+            window.SnipcartSettings.templatesUrl &&
+              (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl));
+        }
+      })();
+    </script>
+  </body>
 </html>

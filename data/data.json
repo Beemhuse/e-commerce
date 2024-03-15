@@ -1,17 +1,17 @@
 [
     {
       "id": 1,
-      "name": "Product 1",
+      "name": "Spiced Mint",
       "price": 29.99,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "product1.jpg"
+      "image": "/images/Spiced-mint.png"
     },
     {
       "id": 2,
-      "name": "Product 2",
+      "name": "Sweet Stroweberry",
       "price": 49.99,
       "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image": "product2.jpg"
+      "image": "/images/Sweet-stoweberry.png"
     },
     {
       "id": 3,
