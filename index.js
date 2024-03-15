@@ -1,10 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
     const productContainer = document.getElementById("product-container");
   
-    // Fetch products from the JSON file
+const baseurl = "https://api.andromedia.cc/auth/login/"
+const endpoint1 = "auth/login/"
+
+// async function postData(url = baseurl+endpoint1, data = {}) {
+  
+//   const data = {
+//     password: "23976237609",
+//     username: "bright"
+  
+//   }
+//   const response = await fetch(url, {
+//     method: "POST", // *GET, POST, PUT, DELETE, etc.
+//     headers: {
+//       "Content-Type": "application/json",
+//       "Authorization": `Bearer ${token}`,
+
+      
+//     },
+   
+//     body: JSON.stringify(data), // body data type must match "Content-Type" header
+//   });
+//   return response.json(); // parses JSON response into native JavaScript objects
+// }
+
+async function getData(){
+  const response = await fetch('./data/data.json');
+const data =await response.json();
+// console.log("promise resolved", data)
+
+}
+
+getData()
+
+
     fetch('./data/data.json')
       .then(response => response.json())
       .then(products => {
+        console.log("fetch ==> ", products)
           products.forEach(product => {
             console.log(product)
           const productCard = createProductCard(product);
