@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Spiced-mint",
+    "price": "9.99$",
+    "image": "/images/Spiced-mint.png"
+  },
+  {
+    "id": 2,
+    "name": "Sweet-stoweberry",
+    "price": "9.99$",
+    "image": "/images/Sweet-stoweberry.png"
+  },
+  {
+    "id": 3,
+    "name": "Cool-blueberries",
+    "price": "9.99$",
+    "image": "/images/Cool-blueberries.png"
+  },
+  {
+    "id": 4,
+    "name": "Juicy-Lemon",
+    "price": "9.99$",
+    "image": "/images/Juicy-Lemon.png"
+  },
+  {
+    "id": 5,
+    "name": "Milky-Flavor",
+    "price": "9.99$",
+    "image": "/images/Milky-Flavor.png"
+  },
+  {
+    "id": 6,
+    "name": "Fragrant-cinnamon",
+    "price": "9.99$",
+    "image": "/images/Fragrant-cinnamon.png"
+  },
+  {
+    "id": 7,
+    "name": "Summer-Cheries",
+    "price": "9.99$",
+    "image": "/images/Summer-Cheries.png"
+  },
+  {
+    "id": 8,
+    "name": "Clean-Lavander",
+    "price": "9.99$",
+    "image": "/images/Clean-Lavander.png"
+  }
+]

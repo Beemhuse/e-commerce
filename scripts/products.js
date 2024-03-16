@@ -1,25 +1,65 @@
 "use strict";
 
-// Getting all the product-card containers
-const productCards = document.querySelectorAll(".product-card");
+function queryDOMTask() {
+  const productContainer = document.querySelector(".product-container");
+  const popularContainer = document.querySelector(".popular");
+  const trendingContainer = document.querySelector(".trending");
 
-//Iterating || looping through all the product-card containers
-for (const productCard of productCards) {
-  //Listening to a click event in each product-card container
-  productCard.addEventListener("click", () => {
-    // Getting the nested elements of the product-card container
-    const targetElement = productCard.innerHTML;
+  const section = document.createElement("section");
+  const section2 = document.createElement("section");
+  const section3 = document.createElement("section");
 
-    // Storing the nested elements of the product-card to localStorage
-    localStorage.setItem("selectedCard", targetElement);
+  section.classList.add("products");
+  section2.classList.add("products");
+  section3.classList.add("products");
 
-    //Getting the Id of the product-card container using data-id attribute
-    let id = productCard.getAttribute("data-id");
+  productContainer.appendChild(section);
+  popularContainer.appendChild(section2);
+  trendingContainer.appendChild(section3);
 
-    // Setting the Url query params string with th product id
-    const queryString = new URLSearchParams({ IdProduct: id }).toString();
+  return [section, section2, section3];
+}
 
-    // Redirecting the URL to the cart.html page
-    window.location.href = `./cart.html?${queryString}`;
+fetch("/data/data2.json")
+  .then((response) => response.json())
+  .then((products) => {
+    const [section, section2, section3] = queryDOMTask();
+    const div = document.querySelectorAll("div");
+
+    productsLooping(0, products.length, section, products);
+    productsLooping(0, 4, section2, products);
+    productsLooping(4, 8, section3, products);
   });
+
+function productsLooping(counter, condition, section, productObj) {
+  for (let i = counter; i < condition; i++) {
+    const divContainer = createElement(productObj[i]);
+    section.appendChild(divContainer);
+    DisplayElement(divContainer, productObj[i]);
+  }
+}
+
+function createElement(product) {
+  const divContainer = document.createElement("div");
+
+  divContainer.addEventListener("click", () => {
+    urlRedirect(product);
+  });
+
+  return divContainer;
+}
+
+function DisplayElement(divContainer, product) {
+  divContainer.innerHTML = `
+   <img src = ${product.image}></img>
+   <p>
+   <em>${product.name}</em>
+   <span>${product.price}</span>
+   </p>
+  `;
+}
+
+function urlRedirect(product) {
+  const productId = new URLSearchParams({ idProduct: product.id }).toString();
+  window.location.href = `/pages/cart.html?${productId}`;
 }
